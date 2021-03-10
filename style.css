@@ -9,6 +9,9 @@
 img {
     max-width: 100%;
 }
+.extLink{
+    font-size: .75rem;
+}
 a:link {
     text-decoration: none;
     color: #423981;
@@ -85,12 +88,42 @@ p{
     justify-content: space-between;
 
 }
+.artContent{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
 .designImage{
     max-width: 50%;
     padding-bottom: 3rem;
 }
+.artImage{
+    max-width: 50%;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
 #lastImg{
     padding-bottom: 4rem;
+}
+.aboutContent{
+    display:flex;
+    flex-flow: column nowrap;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aboutP{
+    text-align: left;
+    max-width: 100%;
+}
+.mePic{
+    align-self: center;
+    max-width: 25%;
+}
+.resume{
+    margin-left: 3rem;
 }
 footer{
     display: flex;
@@ -105,5 +138,129 @@ footer{
     a{
         font-size: 1.25rem;
     }
+    h1{
+        padding-top: 7rem;
+    }
+    .topMenu{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #9b93d4;
+        height: 8rem;
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
 
+}
+@media(min-width: 900px){
+    .titles{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .heading{
+        display: block;
+        max-width: 50%;
+        margin: 0;
+        padding-right: 3rem;
+        
+    }
+    #artDescrip{
+        max-width: 33%;
+        text-align: right;
+    }
+    .artContent{
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row-gap: 3rem;
+        grid-column-gap: 2rem;
+        margin-left: 3rem;
+        
+    
+    }
+    .artImage{
+        max-width: 100%;
+        align-self: start;
+    }
+    p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        max-width: 100%;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: .5rem;
+    }
+    .designImage{
+        max-width: 100%;
+        
+    }
+    .designContent{
+        max-width: 80%;
+        margin:2rem 3rem;
+        display:grid;
+        grid-template-columns: 20% 40% 40%;
+        grid-template-rows: 2rem auto 2rem auto;
+        grid-row-gap: 3rem;
+        grid-column-gap: 2rem;
+    }
+    .item1{
+        align-self: start;
+    }
+    .item2{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        justify-self: end;
+        align-self: start;
+    }
+    .item3{
+        grid-column-start: 2;
+        grid-row-start: 2;
+        justify-self: end;
+        align-self: start;
+    }
+    .item4{
+        grid-column-start: 3;
+        grid-row-start: 2;
+        justify-self: end;
+        align-self: start;
+    }
+    .item5{
+        grid-column-start:1;
+        grid-row-start: 3;
+        align-self: start;
+    }
+    .item6{
+        grid-column-start:1;
+        grid-row-start: 4;
+        justify-self: end;
+        align-self: start; 
+    }
+    .item7{
+        grid-column-start:2;
+        grid-row-start: 4;
+        justify-self: end;
+        align-self: start;
+    }
+    .item8{
+        grid-column-start:3;
+        grid-row-start: 4;
+        justify-self: end;
+        align-self: start;
+    }
+
+}
+
+@media(min-width: 1100px){
+    .heading{
+        display: block;
+        max-width: 50%;
+        margin: 0;
+        padding-right: 7rem;
+        
+    }
+    
 }
