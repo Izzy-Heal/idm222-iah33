@@ -1,3 +1,109 @@
+@font-face {
+    font-family: 'Krona-One';
+    src: url('fonts/kronaone-regular-webfont.ttf') format('truetype'),  
+    url('fonts/kronaone-regular-webfont.woff') format('woff'), 
+    url('fonts/kronaone-regular-webfont.woff2')  format('woff2'), 
+    url('fonts/kronaone-regular-webfont.eot') format('embedded-opentype');
+    
+  }
 img {
-    max-width: 30%;
+    max-width: 100%;
+}
+a:link {
+    text-decoration: none;
+    color: #423981;
+  }
+a:visited {
+    color: #5547b6;
+  }
+
+a:active {
+    color: #5547b6;
+  }
+body {
+    background-image: url(picsForWeb/background.jpg);
+    margin: 0;
+}
+h1,h2,h3, a{
+    font-family: Krona-one, sans-serif;
+}
+a{
+    font-size: .75rem;
+}
+#logo{
+    max-height:4rem ;
+}
+.topMenu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #9b93d4;
+    max-height: 6rem;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.menuitem{
+    padding: 1rem;
+}
+
+.heading{
+    display: block;
+    max-width: 50%;
+    margin: .5rem auto .5rem;
+    text-align: center;
+}
+h1{
+    padding-top: 5rem;
+}
+h2{
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    font-size: 1rem;
+}
+h3{
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+li.resume{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 65%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+
+.designContent{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.designImage{
+    max-width: 50%;
+    padding-bottom: 3rem;
+}
+#lastImg{
+    padding-bottom: 4rem;
+}
+footer{
+    display: flex;
+    height: 8rem;
+    background-color: #9b93d4;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (min-width: 630px){
+    a{
+        font-size: 1.25rem;
+    }
+
 }
