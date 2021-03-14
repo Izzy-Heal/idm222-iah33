@@ -6,6 +6,12 @@
     url('fonts/kronaone-regular-webfont.eot') format('embedded-opentype');
     
   }
+
+@font-face{
+    font-family: 'Abel';
+    src: url('fonts/abel-regular-webfont.woff') format('woff'),
+    url('fonts/abel-regular-webfont.woff2') format('woff2');
+}
 img {
     max-width: 100%;
 }
@@ -16,13 +22,20 @@ a:link {
     text-decoration: none;
     color: #423981;
   }
+
 a:visited {
     color: #5547b6;
   }
-
+a:hover {
+    color: rgb(241, 73, 50);
+  }
 a:active {
     color: #5547b6;
   }
+a.current{
+    text-decoration: overline;
+    color: rgb(241, 73, 50);
+}
 body {
     background-image: url(picsForWeb/background.jpg);
     margin: 0;
@@ -34,28 +47,37 @@ a{
     font-size: .75rem;
 }
 #logo{
-    max-height:4rem ;
+    max-height:2rem ;
 }
 .topMenu{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #9b93d4;
-    max-height: 6rem;
+    background-color: #aa8eff;
+    height: 3rem;
     display:flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
+    gap:.3rem;
 }
 .menuitem{
     padding: 1rem;
 }
-
 .heading{
     display: block;
     max-width: 50%;
     margin: .5rem auto .5rem;
     text-align: center;
+}
+.headingD{
+    text-align: center;
+}
+.mePic{
+    max-width: 60%;
+}
+h3.resume{
+    font-size: 1rem;
 }
 h1{
     padding-top: 5rem;
@@ -70,23 +92,33 @@ h3{
     margin-bottom: .5rem;
 }
 li.resume{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Abel, Geneva, Tahoma, sans-serif;
+}
+.resume{
+    max-width: 80%;
 }
 p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Abel, Geneva, Tahoma, sans-serif;
     max-width: 65%;
     text-align: center;
     margin-top: 0;
     margin-bottom: .5rem;
 }
-
-
+.headingD{
+    max-width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 .designContent{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-between;
 
+}
+.item2, .item6{
+    padding-bottom: 3rem;
 }
 .artContent{
     display: flex;
@@ -116,7 +148,7 @@ p{
 }
 .aboutP{
     text-align: left;
-    max-width: 100%;
+    max-width: 95%;
 }
 .mePic{
     align-self: center;
@@ -127,8 +159,8 @@ p{
 }
 footer{
     display: flex;
-    height: 8rem;
-    background-color: #9b93d4;
+    height: 6rem;
+    background-color: #aa8eff;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
@@ -145,30 +177,47 @@ footer{
         position: fixed;
         top: 0;
         width: 100%;
-        background-color: #9b93d4;
-        height: 8rem;
+        background-color: #aa8eff;
+        height: 6rem;
         display:flex;
         flex-flow: row nowrap;
         justify-content: space-around;
         align-items: center;
     }
+    #logo{
+        max-height: 3rem;
+    }
     
 
 }
 @media(min-width: 900px){
+    .mePic{
+        align-self:flex-end;
+        max-width: 100px;
+        padding-right: 7rem;
+
+    }
+    .aboutP{
+        max-width: 60ch;
+    }
     .titles{
         display: flex;
         flex-flow: column nowrap;
         align-items: flex-end;
         justify-content: flex-end;
     }
+    .headingD{
+        max-width: 100%;
+        text-align: right;
+        margin-left: 0;
+        margin-right: 0;
+    }
     .heading{
         display: block;
         max-width: 50%;
         margin: 0;
-        padding-right: 3rem;
-        
-    }
+        padding-right: 7rem;
+        }
     #artDescrip{
         max-width: 33%;
         text-align: right;
@@ -188,7 +237,7 @@ footer{
         align-self: start;
     }
     p{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Abel, Geneva, Tahoma, sans-serif;
         max-width: 100%;
         text-align: left;
         margin-top: 0;
@@ -203,51 +252,59 @@ footer{
         margin:2rem 3rem;
         display:grid;
         grid-template-columns: 20% 40% 40%;
-        grid-template-rows: 2rem auto 2rem auto;
+        grid-template-rows: auto auto auto auto auto;
         grid-row-gap: 3rem;
         grid-column-gap: 2rem;
+
     }
+    .titlesD{
+        grid-column-start: 3;
+        text-align: right;
+        justify-self: end;
+    }
+
     .item1{
         align-self: start;
+        grid-row-start: 2;
     }
     .item2{
         grid-column-start: 1;
-        grid-row-start: 2;
+        grid-row-start: 3;
         justify-self: end;
         align-self: start;
     }
     .item3{
         grid-column-start: 2;
-        grid-row-start: 2;
+        grid-row-start: 3;
         justify-self: end;
         align-self: start;
     }
     .item4{
         grid-column-start: 3;
-        grid-row-start: 2;
+        grid-row-start: 3;
         justify-self: end;
         align-self: start;
     }
     .item5{
         grid-column-start:1;
-        grid-row-start: 3;
+        grid-row-start: 4;
         align-self: start;
     }
     .item6{
         grid-column-start:1;
-        grid-row-start: 4;
+        grid-row-start: 5;
         justify-self: end;
         align-self: start; 
     }
     .item7{
         grid-column-start:2;
-        grid-row-start: 4;
+        grid-row-start: 5;
         justify-self: end;
         align-self: start;
     }
     .item8{
         grid-column-start:3;
-        grid-row-start: 4;
+        grid-row-start: 5;
         justify-self: end;
         align-self: start;
     }
