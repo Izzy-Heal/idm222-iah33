@@ -97,6 +97,16 @@ li.resume{
 .resume{
     max-width: 80%;
 }
+h1.resume{
+   
+   font-size: 1.2rem;
+   padding-top: .5rem; 
+}
+.resumeT{
+    
+    font-size: 1.2rem; 
+    margin-left: 3rem; 
+}
 p{
     font-family: Abel, Geneva, Tahoma, sans-serif;
     max-width: 65%;
@@ -149,6 +159,7 @@ p{
 .aboutP{
     text-align: left;
     max-width: 95%;
+    padding-bottom: 5rem;
 }
 .mePic{
     align-self: center;
@@ -156,10 +167,16 @@ p{
 }
 .resume{
     margin-left: 3rem;
+
 }
 footer{
+     position:fixed;
+     width:100%;
+     bottom:0;
+     position:fixed;
+     bottom:0;
     display: flex;
-    height: 6rem;
+    height: 3rem;
     background-color: #aa8eff;
     flex-flow: row nowrap;
     align-items: center;
@@ -192,9 +209,10 @@ footer{
 }
 @media(min-width: 900px){
     .mePic{
-        align-self:flex-end;
+        align-self:flex-start;
         max-width: 100px;
         padding-right: 7rem;
+        padding-bottom: 4rem;
 
     }
     .aboutP{
