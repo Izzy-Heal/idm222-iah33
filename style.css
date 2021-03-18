@@ -15,6 +15,12 @@
 img {
     max-width: 100%;
 }
+#logoH{
+    padding-top: 10rem;
+    max-width: 20%;
+    margin-left: 3rem;
+}
+
 .extLink{
     font-size: .75rem;
 }
@@ -28,6 +34,7 @@ a:visited {
   }
 a:hover {
     color: rgb(241, 73, 50);
+    transition: color ease-in-out 300ms;
   }
 a:active {
     color: #5547b6;
@@ -104,9 +111,19 @@ h1.resume{
 }
 #homeName, #homeThing{
     color:#423981 ;
+    text-align: center;
+    width: 100%;
+}
+#homeName{
+    padding-top: 10rem;
+    font-size: 1rem;
+}
+#homeThing{
+    font-size: .75rem;
+    font-style: italic;
+    padding-top: 3rem;
 }
 .resumeT{
-    
     font-size: 1.2rem; 
     margin-left: 3rem; 
 }
@@ -156,7 +173,7 @@ p{
     padding-top: 2rem;
 }
 #lastImg{
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
 }
 .aboutContent{
     display:flex;
@@ -182,8 +199,6 @@ p{
 footer{
      position:fixed;
      width:100%;
-     bottom:0;
-     position:fixed;
      bottom:0;
     display: flex;
     height: 3rem;
@@ -211,13 +226,28 @@ footer{
         justify-content: space-around;
         align-items: center;
     }
-    #logo{
-        max-height: 3rem;
-    }
+
     
 
 }
 @media(min-width: 900px){
+    #homeName, #homeThing{
+        color:#423981 ;
+        text-align: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 0;
+    }
+    #homeName{
+        padding-top: 10rem;
+        font-size: 2.5rem;
+    }
+    #homeThing{
+        font-size: 2rem;
+        font-style: italic;
+        padding-top: 3rem;
+    }
     .mePic{
         align-self:flex-start;
         max-width: 200px;
