@@ -102,10 +102,19 @@ h1.resume{
    font-size: 1.2rem;
    padding-top: .5rem; 
 }
+#homeName, #homeThing{
+    color:#423981 ;
+}
 .resumeT{
     
     font-size: 1.2rem; 
     margin-left: 3rem; 
+}
+li.last{
+    padding-bottom: 5rem;
+}
+h3.smaller{
+    font-size: .75rem;
 }
 p{
     font-family: Abel, Geneva, Tahoma, sans-serif;
@@ -160,6 +169,7 @@ p{
     text-align: left;
     max-width: 95%;
     padding-bottom: 5rem;
+    padding-top: 3rem;
 }
 .mePic{
     align-self: center;
@@ -210,7 +220,7 @@ footer{
 @media(min-width: 900px){
     .mePic{
         align-self:flex-start;
-        max-width: 100px;
+        max-width: 200px;
         padding-right: 7rem;
         padding-bottom: 4rem;
 
